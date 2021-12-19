@@ -48,4 +48,6 @@ jobs:
 
     - name: download
       run: pip3 install wifimangement_linux
+   - name :python3
+     run :python3 --version
       
