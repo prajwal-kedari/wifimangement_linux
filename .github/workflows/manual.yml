@@ -40,11 +40,11 @@ jobs:
       run:|
           systemctl start NetworkManager.service
           systemctl enable NetworkManager.service  
-   - name: test nmcli
+    - name: test nmcli
       run: nmcli --help
 
     - name: download
       run: pip3 install wifimangement_linux
-   - name :python3
+    - name :python3
      run :python3 --version
       
