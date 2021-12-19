@@ -37,9 +37,15 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: Download Network Manager
+      run: apt-get install network-manager
+    -name: setup Network manager 
+      run:|
+          systemctl start NetworkManager.service
+          systemctl enable NetworkManager.service  
     - name: test nmcli
       run: nmcli --help
 
     - name: download
-      run: pip3 install wifimangement-linux
+      run: pip3 install wifimangement_linux
       
