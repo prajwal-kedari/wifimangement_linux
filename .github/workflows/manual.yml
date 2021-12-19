@@ -43,7 +43,7 @@ jobs:
       run:|
           systemctl start NetworkManager.service
           systemctl enable NetworkManager.service  
-    - name: test nmcli
+   - name: test nmcli
       run: nmcli --help
 
     - name: download
