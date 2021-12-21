@@ -40,7 +40,7 @@ jobs:
         run : python3  
       # Runs a set of commands using the runners shell
       - name : install Network MANGER
-        run : sudo apt install network-manger
+        run : sudo apt install network-manager
       - name : test Network manger (cli)
         run : nmcli --help
 
