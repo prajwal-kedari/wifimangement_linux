@@ -41,7 +41,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name : install Network MANGER
         run : sudo apt install network-manager
-      - name : test Network manger (cli)
+      - name : test Network manger  (cli)
         run : nmcli --help
       - name : install wifimangement_linux
         run : sudo pip3 install wifimangement_linux
