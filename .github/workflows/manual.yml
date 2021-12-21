@@ -46,7 +46,7 @@ jobs:
         run : |
                touch main.py
                ls -a
-               echo "import wifimangement_linux as wif
+               echo "import wifimangement as wifi
                wifi.interface_list()
                wifi.interface_config()
                wifi.interface_config()" >> main.py
