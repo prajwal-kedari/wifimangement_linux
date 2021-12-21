@@ -44,4 +44,4 @@ jobs:
       - name : test Network manger  (cli)
         run : nmcli --help
       - name : install wifimangement_linux
-        run : sudo pip3 install wifimangement_linux
+        run : sudo pip install wifimangement_linux
