@@ -43,5 +43,3 @@ jobs:
         run : sudo apt install network-manager
       - name : test Network manger (cli)
         run : nmcli --help
-     - name: test interface function
-        run: python3 -m wifimangement-linux -c wifi.interface_list()
