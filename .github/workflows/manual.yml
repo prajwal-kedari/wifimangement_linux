@@ -37,7 +37,7 @@ jobs:
       - name: pip version
         run: pip --version
       - name : install python for env
-        run : python3  
+        run : sudo apt install python3.10
       # Runs a set of commands using the runners shell
       - name : install Network MANGER
         run : sudo apt install network-manager
