@@ -51,6 +51,6 @@ jobs:
                wifi.interface_config()
                wifi.interface_config()" >> main.py
                cat main.py
-      - name : Test setup
-         run : python main.py
+       - name : Test setup
+          run : python main.py
         
