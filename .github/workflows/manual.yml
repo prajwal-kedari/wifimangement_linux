@@ -45,8 +45,6 @@ jobs:
         run : nmcli --help
      - name : install wifimangement-linux (pip)
         run : pip3 install wifimangement-linux
-     - name : run wifimangement-linux
-        run : python3 wifimangement-linux.py
      - name: test interface function
         run: python3 -m wifimangement-linux -c wifi.interface_list()
    
