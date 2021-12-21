@@ -42,6 +42,6 @@ jobs:
       - name : install Network MANGER
         run : sudo apt install network-manger
       - name : test Network manger (cli)
-         run : nmcli --help
+        run : nmcli --help
 
       
