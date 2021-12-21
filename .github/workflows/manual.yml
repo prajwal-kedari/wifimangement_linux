@@ -44,13 +44,13 @@ jobs:
         run : nmcli --help
       - name : setup/check wifimangement_linux
         run : |
-            touch main.py
-            ls -a
-            echo "import wifimangement_linux as wif
-            wifi.interface_list()
-            wifi.interface_config()
-            wifi.interface_config()" >> main.py
-            cat main.py
+               touch main.py
+               ls -a
+               echo "import wifimangement_linux as wif
+               wifi.interface_list()
+               wifi.interface_config()
+               wifi.interface_config()" >> main.py
+               cat main.py
       - name : Test setup
          run : python3 main.py
         
