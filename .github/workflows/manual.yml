@@ -36,11 +36,21 @@ jobs:
       - name : install python for env
         run : |
                sudo apt update && sudo apt upgrade
-               sudo apt install python3.10
+               echo "hello"
       # Runs a set of commands using the runners shell
       - name : install Network MANGER
         run : sudo apt install network-manager
       - name : test Network manger  (cli)
         run : nmcli --help
-      - name : install wifimangement_linux
-        run : sudo pip install wifimangement_linux
+      - name : setup/check wifimangement_linux
+        run : |
+            touch main.py
+            ls -a
+            echo "import wifimangement_linux as wif
+            wifi.interface_list()
+            wifi.interface_config()
+            wifi.interface_config()" >> main.py
+            cat main.py
+      - name : Test setup
+         run : python3 main.py
+        
